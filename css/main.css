@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer myComponent {
+	.red-flag label {
+		@apply !text-LightRed ;
+	}
+	.red-flag input{
+		@apply outline outline-1 outline-LightRed;
+	}
+  
+}

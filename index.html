@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Age calculator app</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
+			* {
+				/* outline: 1px solid lime; */
+			}
+		</style>
+	</head>
+	<body
+		class="flex justify-center items-center bg-OffWhite font-Poppins h-screen"
+	>
+		<div
+			class="mx-4 sm:mx-auto rounded-br-[6rem] sm:rounded-br-[10rem] rounded-3xl bg-White px-6 py-10 sm:px-10 sm:w-[40rem]"
+		>
+			<div class="relative flex gap-5 pb-14 sm:pb-8 border-b border-LightGrey">
+				<div>
+					<label
+						class="block text-SmokeyGrey text-xs mb-1 uppercase tracking-widest"
+						for="day"
+						>Day</label
+					>
+					<input
+						class="border border-LightGrey p-3 rounded-lg w-full sm:w-32 text-xl focus:outline-SmokeyGrey"
+						type="number"
+						name="day"
+						id="day"
+						placeholder="DD"
+					/>
+					<label
+						class="error hidden block text-LightRed italic mt-1 text-xs"
+						for="day"
+						>error</label
+					>
+				</div>
+				<div>
+					<label
+						class="block text-SmokeyGrey text-xs mb-1 uppercase tracking-widest"
+						for="month"
+						>Month</label
+					>
+					<input
+						class="border border-LightGrey p-3 rounded-lg w-full sm:w-32 text-xl focus:outline-SmokeyGrey"
+						type="number"
+						name="month"
+						id="month"
+						placeholder="MM"
+					/>
+					<label
+						class="error hidden block text-LightRed italic mt-1 text-xs"
+						for="month"
+						>error</label
+					>
+				</div>
+				<div>
+					<label
+						class="block text-SmokeyGrey text-xs mb-1 uppercase tracking-widest"
+						for="year"
+						>Year</label
+					>
+					<input
+						class="border border-LightGrey p-3 rounded-lg w-full sm:w-32 text-xl focus:outline-SmokeyGrey"
+						type="number"
+						name="year"
+						id="year"
+						placeholder="YYYY"
+					/>
+					<label
+						class="error hidden block text-LightRed italic mt-1 text-xs"
+						for="year"
+						>error</label
+					>
+				</div>
+				<button
+					class="absolute bg-Purple rounded-full flex justify-center items-center w-16 aspect-square -bottom-8 right-1/2 translate-x-1/2 sm:right-0 sm:translate-x-0 hover:bg-OffBlack"
+				>
+					<img class="w-1/2" src="images/icon-arrow.svg" alt="" />
+				</button>
+			</div>
+			<div
+				class="py-10 text-5xl italic font-bold flex flex-col gap-3 text-OffBlack"
+			>
+				<span class="block"
+					><span class="year-result text-Purple">--</span> years</span
+				>
+				<span class="block"
+					><span class="month-result text-Purple">--</span> months</span
+				>
+				<span class="block"
+					><span class="day-result text-Purple">--</span> days</span
+				>
+			</div>
+		</div>
+		<div class="absolute attribution text-sm text-center bottom-5 p-3">
+			Challenge by
+			<a
+				class="text-Purple"
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a class="text-LightRed" href="#">Hossam Eldin</a>.
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

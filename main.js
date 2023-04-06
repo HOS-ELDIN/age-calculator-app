@@ -154,6 +154,7 @@ function fillNumbers(e, goal) {
       // i < 10 ? e.innerHTML=`0${i}` : e.innerHTML = i
 		}
 		if (i == parseInt(goal)) {
+			e.innerHTML = i
 			clearInterval(up);
 		}
 	}, 1000 / goal);
